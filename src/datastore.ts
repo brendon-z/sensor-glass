@@ -20,4 +20,8 @@ function setData(newData: datastore) {
     data = newData;
 }
 
-export { getEmptyDataStore, getData, setData, datastore };
+function getFormatWithId(id: number) {
+    return data.formats.find(x => x.id === id);
+}
+
+export { getEmptyDataStore, getData, setData, getFormatWithId, datastore };

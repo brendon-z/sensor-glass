@@ -5,7 +5,6 @@ import { Format } from './format';
 
 // Temporary testing
 loadJSON("data/data.json");
-readout();
 
 function loadJSON(filename: string) {
     if (fs.existsSync(filename)) {
@@ -23,3 +22,5 @@ function readout() {
         console.log(data.formats.find(x => x.name === "35 mm full frame").area);
     }
 }
+
+export { loadJSON, readout };
