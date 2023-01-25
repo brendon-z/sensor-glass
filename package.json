@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "compute-gcd": "^1.2.1"
-  },
-  "devDependencies": {
-    "@types/compute-gcd": "^1.2.0"
-  }
-}
