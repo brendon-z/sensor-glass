@@ -10,5 +10,5 @@ A utility for comparing camera sensor formats with focal length conversions and 
 * Basic frontend set up
   * Express server to host frontend
 * Complex UI features
-  ** Probably using React
-  ** Visualisation of sensor sizing and focal length comparison
+  * Probably using React
+  * Visualisation of sensor sizing and focal length comparison
