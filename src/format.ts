@@ -4,13 +4,15 @@ import { fullFrameDiagonal } from "./types/referenceValues";
 import gcdCalc from 'compute-gcd';
 
 class Format {
+    id: number;
     name: string;
     dimensions: dimensions;
     _area: number;
     _aspectRatio: number;
     _cropFactor: number;
 
-    constructor(name: string, dimensions: dimensions) {
+    constructor(id: number, name: string, dimensions: dimensions) {
+        this.id = id;
         this.name = name;
         this.dimensions = dimensions;
     }
