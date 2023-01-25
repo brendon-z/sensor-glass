@@ -1,12 +1,12 @@
-type dimensions = {
-    width : number
-    height : number
+interface dimensions {
+    width: number
+    height: number
     diagonalSize: number
 }
 
-type aspectRatio = {
-    horizontalAspect : number
-    verticalAspect : number
+interface aspectRatio {
+    horizontalAspect: number
+    verticalAspect: number
 }
 
 export {
