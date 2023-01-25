@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "noImplicitAny": false,
+        "noEmit": true,
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "target": "ES2015"
+    },
+    "exclude": [
+      "**/**_broken.ts"
+    ],
+  }
+  
