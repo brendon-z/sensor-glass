@@ -5,7 +5,7 @@ import { getInfo } from './routes';
 const router = express.Router();
 
 router.get('/', (req: Request, res: Response) => {
-    res.json("Hello world, welcome to the server root 😉");
+    res.send("Hello world, welcome to the server root 😉");
 });
 
 router.get('/format/view/:id', (req: Request, res: Response) => {
