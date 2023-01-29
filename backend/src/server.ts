@@ -3,7 +3,7 @@ import cors from 'cors';
 import morgan from 'morgan';
 import { PORT, SERVER_URL } from '../config';
 
-import { loadJSON } from './main';
+import { loadJSON } from './api';
 import { router } from './router';
 
 const app = express();

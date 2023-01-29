@@ -11,8 +11,7 @@ class Format {
     _aspectRatio: number;
     _cropFactor: number;
 
-    constructor(id: number, name: string, dimensions: dimensions) {
-        this.id = id;
+    constructor(name: string, dimensions: dimensions) {
         this.name = name;
         this.dimensions = dimensions;
     }
@@ -23,7 +22,6 @@ class Format {
 
     get aspectRatio(): aspectRatio {
         let fraction: string = fracCalc(this.dimensions.width / this.dimensions.height).toFraction();
-        console.log(fraction);
         return { horizontalAspect: parseInt(fraction.split('/')[0]), verticalAspect: parseInt(fraction.split('/')[1]) };
     }
 

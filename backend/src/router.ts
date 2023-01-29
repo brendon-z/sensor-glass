@@ -1,17 +1,23 @@
 import express, { json, Request, Response } from 'express';
 
-import { getInfo } from './routes';
+import { addFormat, getInfo } from './routes';
+import { getData } from './datastore';
 
 const router = express.Router();
 
 router.get('/', (req: Request, res: Response) => {
-    res.send("Hello world, welcome to the server root 😉");
+    res.json("Hello world, welcome to the server root 😉");
 });
 
 router.get('/format/view/:id', (req: Request, res: Response) => {
     const formatId = req.params.id as string;
-    console.log(formatId);
     res.json(getInfo(parseInt(formatId)));
+});
+
+router.post('/format/add', (req: Request, res: Response) => {
+    const { name, width, height } = req.body;
+    res.json(addFormat(name, width, height));
+    console.log(getData().formats);
 });
 
 export { router };

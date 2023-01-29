@@ -24,4 +24,9 @@ function getFormatWithId(id: number) {
     return data.formats.find(x => x.id === id);
 }
 
-export { getEmptyDataStore, getData, setData, getFormatWithId, datastore };
+function addFormat(newFormat: Format) {
+    newFormat.id = data.formats.length;
+    data.formats.push(newFormat);
+}
+
+export { getEmptyDataStore, getData, setData, getFormatWithId, addFormat, datastore };
