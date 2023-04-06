@@ -27,4 +27,8 @@ function createNewFormat(name: string, dimensions: dimensions) {
     addFormat(newFormat);
 }
 
+function equivFocalLength(actualLength: number, cropFactor: number) : number {
+    return actualLength * cropFactor;
+}
+
 export { loadJSON, readout, createNewFormat };

@@ -22,7 +22,7 @@ function getInfo(formatId: number) {
 }
 
 function addFormat(name: string, width: number, height: number) {
-    let dimensions: dimensions = {width: width, height: height, diagonalSize: Math.sqrt(Math.pow(width, 2) + Math.pow(height, 2))};
+    let dimensions: dimensions = {width: width, height: height, diagonalSize: Math.round(Math.sqrt(Math.pow(width, 2) + Math.pow(height, 2)) * 10) / 10 };
     createNewFormat(name, dimensions);
 }
 
